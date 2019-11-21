@@ -19,7 +19,7 @@ class Produtos{
 
             $con = $bd->conectar();
 
-            $sql = $con->prepare("SELECT NOME FROM PRODUTOS");
+            $sql = $con->prepare("SELECT * FROM PRODUTOS");
 
         }catch (PDOExeception $msg){
 
